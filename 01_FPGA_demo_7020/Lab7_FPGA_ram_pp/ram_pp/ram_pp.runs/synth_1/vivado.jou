@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Mar 23 16:40:08 2020
+# Process ID: 3060
+# Current directory: E:/demo/Mizair/FPGA/Lab4_FPGA_ram_pp/ram_pp/ram_pp.runs/synth_1
+# Command line: vivado.exe -log ram_pp.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ram_pp.tcl
+# Log file: E:/demo/Mizair/FPGA/Lab4_FPGA_ram_pp/ram_pp/ram_pp.runs/synth_1/ram_pp.vds
+# Journal file: E:/demo/Mizair/FPGA/Lab4_FPGA_ram_pp/ram_pp/ram_pp.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ram_pp.tcl -notrace

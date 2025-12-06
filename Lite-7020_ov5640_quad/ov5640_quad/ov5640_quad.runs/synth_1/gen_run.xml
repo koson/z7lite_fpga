@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-2" LaunchTime="1617007366">
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/system/system.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/bd/system/system.bd"/>
+        <Attr Name="ImportTime" Val="1534776072"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/i2c_com.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/hdl/i2c_com.v"/>
+        <Attr Name="ImportTime" Val="1449127166"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/power_on_delay.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/hdl/power_on_delay.v"/>
+        <Attr Name="ImportTime" Val="1524668973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/reg_config.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/hdl/reg_config.v"/>
+        <Attr Name="ImportTime" Val="1509948940"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/hdl/top.v"/>
+        <Attr Name="ImportTime" Val="1532426740"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/system/hdl/system_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/xdc/clock.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/xdc/clock.xdc"/>
+        <Attr Name="ImportTime" Val="1532427977"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/xdc/pin.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/xdc/pin.xdc"/>
+        <Attr Name="ImportTime" Val="1532427955"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_dynclk_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_rst_processing_system7_0_150M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_vdma_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_rgb2dvi_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_vdma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_v_axi4s_vid_out_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_rst_processing_system7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axis_subset_converter_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_v_tc_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_vdma_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_vdma_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_vdma_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_ov5640_axis_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_ov5640_axis_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_ov5640_axis_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_ov5640_axis_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_subimage_axis_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_subimage_axis_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_subimage_axis_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_subimage_axis_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_9"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_7"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_8"/>
+</GenRun>

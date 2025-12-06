@@ -1,0 +1,938 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mp02/Desktop/mz7020_ov5640_quad/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top top -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1588 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 460.484 ; gain = 111.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/imports/hdl/top.v:12]
+INFO: [Synth 8-6157] synthesizing module 'power_on_delay' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/imports/hdl/power_on_delay.v:2]
+WARNING: [Synth 8-6014] Unused sequential element cnt1_reg was removed.  [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/imports/hdl/power_on_delay.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'power_on_delay' (1#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/imports/hdl/power_on_delay.v:2]
+INFO: [Synth 8-6157] synthesizing module 'reg_config' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/imports/hdl/reg_config.v:2]
+INFO: [Synth 8-6157] synthesizing module 'i2c_com' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/imports/hdl/i2c_com.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/imports/hdl/i2c_com.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_com' (2#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/imports/hdl/i2c_com.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/imports/hdl/reg_config.v:61]
+WARNING: [Synth 8-5788] Register i2c_data_reg in module reg_config is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/imports/hdl/reg_config.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'reg_config' (3#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/imports/hdl/reg_config.v:2]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (4#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'system' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:3819]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_dynclk_0_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_axi_dynclk_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_dynclk_0_0' (5#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_axi_dynclk_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_interconnect_0_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:5280]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_LCIC31' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:12]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_0' (6#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_LCIC31' (7#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:12]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_Y9JEWS' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:3318]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_Y9JEWS' (8#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:3318]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1N4HKML' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:3443]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1N4HKML' (9#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:3443]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_1Y5U2QN' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:3568]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_1Y5U2QN' (10#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:3568]
+INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_MY7POU' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:3693]
+INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_MY7POU' (11#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:3693]
+INFO: [Synth 8-6157] synthesizing module 'system_xbar_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_xbar_0' (12#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_xbar_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'xbar' of module 'system_xbar_0' requires 78 connections, but only 71 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:6072]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_interconnect_0_0' (13#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:5280]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_mem_intercon_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:6146]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1P403ZT' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:2760]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_1' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_1' (14#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1P403ZT' (15#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:2760]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_mem_intercon_0' (16#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:6146]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_vdma_0_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_axi_vdma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_vdma_0_0' (17#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_axi_vdma_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_vdma_0' of module 'system_axi_vdma_0_0' requires 41 connections, but only 40 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:4531]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_vdma_1_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_axi_vdma_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_vdma_1_0' (18#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_axi_vdma_1_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_vdma_1' of module 'system_axi_vdma_1_0' requires 44 connections, but only 42 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:4572]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_vdma_2_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_axi_vdma_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_vdma_2_0' (19#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_axi_vdma_2_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_vdma_2' of module 'system_axi_vdma_2_0' requires 44 connections, but only 42 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:4615]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_vdma_3_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_axi_vdma_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_vdma_3_0' (20#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_axi_vdma_3_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_vdma_3' of module 'system_axi_vdma_3_0' requires 44 connections, but only 42 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:4658]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_vdma_4_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_axi_vdma_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_vdma_4_0' (21#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_axi_vdma_4_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_vdma_4' of module 'system_axi_vdma_4_0' requires 44 connections, but only 42 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:4701]
+INFO: [Synth 8-6157] synthesizing module 'system_axis_subset_converter_0_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_axis_subset_converter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axis_subset_converter_0_0' (22#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_axis_subset_converter_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axis_subset_converter_0' of module 'system_axis_subset_converter_0_0' requires 14 connections, but only 13 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:4744]
+INFO: [Synth 8-6157] synthesizing module 'system_ov5640_axis_0_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_ov5640_axis_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_ov5640_axis_0_0' (23#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_ov5640_axis_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_ov5640_axis_1_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_ov5640_axis_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_ov5640_axis_1_0' (24#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_ov5640_axis_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_ov5640_axis_2_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_ov5640_axis_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_ov5640_axis_2_0' (25#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_ov5640_axis_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_ov5640_axis_3_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_ov5640_axis_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_ov5640_axis_3_0' (26#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_ov5640_axis_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_processing_system7_0_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_processing_system7_0_0' (27#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'system_processing_system7_0_0' requires 164 connections, but only 148 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:4802]
+INFO: [Synth 8-6157] synthesizing module 'system_processing_system7_0_axi_periph_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:6316]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_WKXF3L' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:417]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_2' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_2' (28#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_2_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'system_auto_pc_2' requires 60 connections, but only 57 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:652]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_WKXF3L' (29#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:417]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1ORP4PS' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:712]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_3' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_3' (30#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_3_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'system_auto_pc_3' requires 60 connections, but only 58 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:951]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1ORP4PS' (31#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:712]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1VD9O7M' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:1012]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_4' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_4' (32#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1VD9O7M' (33#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:1012]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_PPDLC3' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:1322]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_PPDLC3' (34#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:1322]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_18RU2BA' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:1580]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_5' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_5' (35#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_5_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'system_auto_pc_5' requires 60 connections, but only 57 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:1815]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_18RU2BA' (36#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:1580]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_47WDK7' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:1875]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_6' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_6' (37#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_6_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'system_auto_pc_6' requires 60 connections, but only 57 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:2110]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_47WDK7' (38#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:1875]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_ATGYFP' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:2170]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_7' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_7' (39#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_7_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'system_auto_pc_7' requires 60 connections, but only 57 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:2405]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_ATGYFP' (40#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:2170]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_11WAABO' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:2465]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_8' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_8' (41#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_8_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'system_auto_pc_8' requires 60 connections, but only 57 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:2700]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_11WAABO' (42#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:2465]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_IK3G2O' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:2923]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_9' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_9_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_9' (43#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_auto_pc_9_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'system_auto_pc_9' requires 79 connections, but only 77 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:3238]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_IK3G2O' (44#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:2923]
+INFO: [Synth 8-6157] synthesizing module 'system_xbar_1' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_xbar_1' (45#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_processing_system7_0_axi_periph_0' (46#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:6316]
+WARNING: [Synth 8-350] instance 'processing_system7_0_axi_periph' of module 'system_processing_system7_0_axi_periph_0' requires 209 connections, but only 183 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:4951]
+INFO: [Synth 8-6157] synthesizing module 'system_rgb2dvi_0_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_rgb2dvi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_rgb2dvi_0_0' (47#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_rgb2dvi_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_rst_processing_system7_0_100M_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_rst_processing_system7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_rst_processing_system7_0_100M_0' (48#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_rst_processing_system7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_processing_system7_0_100M' of module 'system_rst_processing_system7_0_100M_0' requires 10 connections, but only 7 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:5147]
+INFO: [Synth 8-6157] synthesizing module 'system_rst_processing_system7_0_150M_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_rst_processing_system7_0_150M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_rst_processing_system7_0_150M_0' (49#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_rst_processing_system7_0_150M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_processing_system7_0_150M' of module 'system_rst_processing_system7_0_150M_0' requires 10 connections, but only 8 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:5155]
+INFO: [Synth 8-6157] synthesizing module 'system_subimage_axis_0_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_subimage_axis_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_subimage_axis_0_0' (50#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_subimage_axis_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_subimage_axis_1_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_subimage_axis_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_subimage_axis_1_0' (51#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_subimage_axis_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_subimage_axis_2_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_subimage_axis_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_subimage_axis_2_0' (52#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_subimage_axis_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_subimage_axis_3_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_subimage_axis_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_subimage_axis_3_0' (53#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_subimage_axis_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_v_axi4s_vid_out_0_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_v_axi4s_vid_out_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_v_axi4s_vid_out_0_0' (54#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_v_axi4s_vid_out_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'v_axi4s_vid_out_0' of module 'system_v_axi4s_vid_out_0_0' requires 31 connections, but only 23 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:5216]
+INFO: [Synth 8-6157] synthesizing module 'system_v_tc_0_0' [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_v_tc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_v_tc_0_0' (55#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/.Xil/Vivado-2172-DESKTOP-PFE3LVD/realtime/system_v_tc_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'v_tc_0' of module 'system_v_tc_0_0' requires 32 connections, but only 31 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:5240]
+INFO: [Synth 8-6157] synthesizing module 'system_xlconcat_0_0' [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_1_xlconcat' [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 4 - type: integer 
+	Parameter NUM_PORTS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_1_xlconcat' (56#1) [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'system_xlconcat_0_0' (57#1) [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'system' (58#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/synth/system.v:3819]
+WARNING: [Synth 8-350] instance 'system_i' of module 'system' requires 49 connections, but only 25 given [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/imports/hdl/top.v:118]
+INFO: [Synth 8-6155] done synthesizing module 'top' (59#1) [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/imports/hdl/top.v:12]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In31[0]
+WARNING: [Synth 8-3331] design s00_couplers_imp_IK3G2O has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_IK3G2O has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m07_couplers_imp_11WAABO has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m07_couplers_imp_11WAABO has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m06_couplers_imp_ATGYFP has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m06_couplers_imp_ATGYFP has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_47WDK7 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m05_couplers_imp_47WDK7 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_18RU2BA has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_18RU2BA has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_PPDLC3 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_PPDLC3 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_PPDLC3 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_PPDLC3 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_1VD9O7M has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_1VD9O7M has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ORP4PS has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ORP4PS has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_WKXF3L has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_WKXF3L has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1P403ZT has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1P403ZT has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design system_axi_mem_intercon_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design system_axi_mem_intercon_0 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design s03_couplers_imp_MY7POU has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s03_couplers_imp_MY7POU has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s03_couplers_imp_MY7POU has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s03_couplers_imp_MY7POU has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design s02_couplers_imp_1Y5U2QN has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s02_couplers_imp_1Y5U2QN has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s02_couplers_imp_1Y5U2QN has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s02_couplers_imp_1Y5U2QN has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design s01_couplers_imp_1N4HKML has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_1N4HKML has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s01_couplers_imp_1N4HKML has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_1N4HKML has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_Y9JEWS has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_Y9JEWS has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_Y9JEWS has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_Y9JEWS has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_LCIC31 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_LCIC31 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_LCIC31 has unconnected port M_AXI_bid[5]
+WARNING: [Synth 8-3331] design m00_couplers_imp_LCIC31 has unconnected port M_AXI_bid[4]
+WARNING: [Synth 8-3331] design m00_couplers_imp_LCIC31 has unconnected port M_AXI_bid[3]
+WARNING: [Synth 8-3331] design m00_couplers_imp_LCIC31 has unconnected port M_AXI_bid[2]
+WARNING: [Synth 8-3331] design m00_couplers_imp_LCIC31 has unconnected port M_AXI_rid[5]
+WARNING: [Synth 8-3331] design m00_couplers_imp_LCIC31 has unconnected port M_AXI_rid[4]
+WARNING: [Synth 8-3331] design m00_couplers_imp_LCIC31 has unconnected port M_AXI_rid[3]
+WARNING: [Synth 8-3331] design m00_couplers_imp_LCIC31 has unconnected port M_AXI_rid[2]
+WARNING: [Synth 8-3331] design reg_config has unconnected port initial_en
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 521.660 ; gain = 172.742
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin system_i:IIC_0_0_scl_i to constant 0 [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/imports/hdl/top.v:118]
+WARNING: [Synth 8-3295] tying undriven pin system_i:IIC_0_0_sda_i to constant 0 [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/imports/hdl/top.v:118]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 521.660 ; gain = 172.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 521.660 ; gain = 172.742
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_axi_dynclk_0_0/system_axi_dynclk_0_0/system_axi_dynclk_0_0_in_context.xdc] for cell 'system_i/axi_dynclk_0'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_axi_dynclk_0_0/system_axi_dynclk_0_0/system_axi_dynclk_0_0_in_context.xdc] for cell 'system_i/axi_dynclk_0'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc] for cell 'system_i/rgb2dvi_0'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc] for cell 'system_i/rgb2dvi_0'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0/system_axi_vdma_0_0_in_context.xdc] for cell 'system_i/axi_vdma_0'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0/system_axi_vdma_0_0_in_context.xdc] for cell 'system_i/axi_vdma_0'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_axis_subset_converter_0_0/system_axis_subset_converter_0_0/system_axis_subset_converter_0_0_in_context.xdc] for cell 'system_i/axis_subset_converter_0'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_axis_subset_converter_0_0/system_axis_subset_converter_0_0/system_axis_subset_converter_0_0_in_context.xdc] for cell 'system_i/axis_subset_converter_0'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0/system_processing_system7_0_0_in_context.xdc] for cell 'system_i/processing_system7_0'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0/system_processing_system7_0_0_in_context.xdc] for cell 'system_i/processing_system7_0'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0_in_context.xdc] for cell 'system_i/rst_processing_system7_0_100M'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0_in_context.xdc] for cell 'system_i/rst_processing_system7_0_100M'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_150M_0/system_rst_processing_system7_0_150M_0/system_rst_processing_system7_0_150M_0_in_context.xdc] for cell 'system_i/rst_processing_system7_0_150M'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_150M_0/system_rst_processing_system7_0_150M_0/system_rst_processing_system7_0_150M_0_in_context.xdc] for cell 'system_i/rst_processing_system7_0_150M'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'system_i/v_axi4s_vid_out_0'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'system_i/v_axi4s_vid_out_0'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_v_tc_0_0/system_v_tc_0_0/system_v_tc_0_0_in_context.xdc] for cell 'system_i/v_tc_0'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_v_tc_0_0/system_v_tc_0_0/system_v_tc_0_0_in_context.xdc] for cell 'system_i/v_tc_0'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_axi_vdma_1_0/system_axi_vdma_1_0/system_axi_vdma_1_0_in_context.xdc] for cell 'system_i/axi_vdma_1'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_axi_vdma_1_0/system_axi_vdma_1_0/system_axi_vdma_1_0_in_context.xdc] for cell 'system_i/axi_vdma_1'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_axi_vdma_2_0/system_axi_vdma_2_0/system_axi_vdma_2_0_in_context.xdc] for cell 'system_i/axi_vdma_2'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_axi_vdma_2_0/system_axi_vdma_2_0/system_axi_vdma_2_0_in_context.xdc] for cell 'system_i/axi_vdma_2'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_axi_vdma_3_0/system_axi_vdma_3_0/system_axi_vdma_3_0_in_context.xdc] for cell 'system_i/axi_vdma_3'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_axi_vdma_3_0/system_axi_vdma_3_0/system_axi_vdma_3_0_in_context.xdc] for cell 'system_i/axi_vdma_3'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_axi_vdma_4_0/system_axi_vdma_4_0/system_axi_vdma_4_0_in_context.xdc] for cell 'system_i/axi_vdma_4'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_axi_vdma_4_0/system_axi_vdma_4_0/system_axi_vdma_4_0_in_context.xdc] for cell 'system_i/axi_vdma_4'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_ov5640_axis_0_0/system_ov5640_axis_0_0/system_ov5640_axis_0_0_in_context.xdc] for cell 'system_i/ov5640_axis_0'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_ov5640_axis_0_0/system_ov5640_axis_0_0/system_ov5640_axis_0_0_in_context.xdc] for cell 'system_i/ov5640_axis_0'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_ov5640_axis_1_0/system_ov5640_axis_1_0/system_ov5640_axis_1_0_in_context.xdc] for cell 'system_i/ov5640_axis_1'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_ov5640_axis_1_0/system_ov5640_axis_1_0/system_ov5640_axis_1_0_in_context.xdc] for cell 'system_i/ov5640_axis_1'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_ov5640_axis_2_0/system_ov5640_axis_2_0/system_ov5640_axis_2_0_in_context.xdc] for cell 'system_i/ov5640_axis_2'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_ov5640_axis_2_0/system_ov5640_axis_2_0/system_ov5640_axis_2_0_in_context.xdc] for cell 'system_i/ov5640_axis_2'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_ov5640_axis_3_0/system_ov5640_axis_3_0/system_ov5640_axis_3_0_in_context.xdc] for cell 'system_i/ov5640_axis_3'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_ov5640_axis_3_0/system_ov5640_axis_3_0/system_ov5640_axis_3_0_in_context.xdc] for cell 'system_i/ov5640_axis_3'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_subimage_axis_0_0/system_subimage_axis_0_0/system_subimage_axis_0_0_in_context.xdc] for cell 'system_i/subimage_axis_0'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_subimage_axis_0_0/system_subimage_axis_0_0/system_subimage_axis_0_0_in_context.xdc] for cell 'system_i/subimage_axis_0'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_subimage_axis_1_0/system_subimage_axis_1_0/system_subimage_axis_1_0_in_context.xdc] for cell 'system_i/subimage_axis_1'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_subimage_axis_1_0/system_subimage_axis_1_0/system_subimage_axis_1_0_in_context.xdc] for cell 'system_i/subimage_axis_1'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_subimage_axis_2_0/system_subimage_axis_2_0/system_subimage_axis_2_0_in_context.xdc] for cell 'system_i/subimage_axis_2'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_subimage_axis_2_0/system_subimage_axis_2_0/system_subimage_axis_2_0_in_context.xdc] for cell 'system_i/subimage_axis_2'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_subimage_axis_3_0/system_subimage_axis_3_0/system_subimage_axis_3_0_in_context.xdc] for cell 'system_i/subimage_axis_3'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_subimage_axis_3_0/system_subimage_axis_3_0/system_subimage_axis_3_0_in_context.xdc] for cell 'system_i/subimage_axis_3'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0/system_xbar_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0/system_xbar_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/xbar'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_xbar_1/system_xbar_1/system_xbar_1_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_xbar_1/system_xbar_1/system_xbar_1_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_interconnect_0/m00_couplers/auto_pc'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1/system_auto_pc_1_in_context.xdc] for cell 'system_i/axi_mem_intercon/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1/system_auto_pc_1_in_context.xdc] for cell 'system_i/axi_mem_intercon/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_9/system_auto_pc_9/system_auto_pc_9_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_9/system_auto_pc_9/system_auto_pc_9_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2/system_auto_pc_2_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/m00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2/system_auto_pc_2_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/m00_couplers/auto_pc'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_3/system_auto_pc_3/system_auto_pc_3_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/m01_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_3/system_auto_pc_3/system_auto_pc_3_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/m01_couplers/auto_pc'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_4/system_auto_pc_4/system_auto_pc_4_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/m02_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_4/system_auto_pc_4/system_auto_pc_4_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/m02_couplers/auto_pc'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_5/system_auto_pc_5/system_auto_pc_5_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/m04_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_5/system_auto_pc_5/system_auto_pc_5_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/m04_couplers/auto_pc'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_6/system_auto_pc_6/system_auto_pc_6_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/m05_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_6/system_auto_pc_6/system_auto_pc_6_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/m05_couplers/auto_pc'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_7/system_auto_pc_7/system_auto_pc_7_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/m06_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_7/system_auto_pc_7/system_auto_pc_7_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/m06_couplers/auto_pc'
+Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_8/system_auto_pc_8/system_auto_pc_8_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/m07_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_auto_pc_8/system_auto_pc_8/system_auto_pc_8_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/m07_couplers/auto_pc'
+Parsing XDC File [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/constrs_1/imports/xdc/clock.xdc]
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_0'. [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/constrs_1/imports/xdc/clock.xdc:11]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/constrs_1/imports/xdc/clock.xdc:11]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_fpga_0]'. [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/constrs_1/imports/xdc/clock.xdc:11]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_1'. [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/constrs_1/imports/xdc/clock.xdc:12]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/constrs_1/imports/xdc/clock.xdc:12]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_fpga_1]'. [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/constrs_1/imports/xdc/clock.xdc:12]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_2'. [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/constrs_1/imports/xdc/clock.xdc:13]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/constrs_1/imports/xdc/clock.xdc:13]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_fpga_2]'. [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/constrs_1/imports/xdc/clock.xdc:13]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/constrs_1/imports/xdc/clock.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/constrs_1/imports/xdc/clock.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/constrs_1/imports/xdc/pin.xdc]
+Finished Parsing XDC File [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/constrs_1/imports/xdc/pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/constrs_1/imports/xdc/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 891.172 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 891.172 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 891.172 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 891.172 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'system_i/axi_vdma_0' at clock pin 'm_axi_mm2s_aclk' is different from the actual clock period '8.333', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'system_i/axi_vdma_1' at clock pin 'm_axi_s2mm_aclk' is different from the actual clock period '8.333', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'system_i/axi_vdma_2' at clock pin 'm_axi_s2mm_aclk' is different from the actual clock period '8.333', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'system_i/axi_vdma_3' at clock pin 'm_axi_s2mm_aclk' is different from the actual clock period '8.333', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'system_i/axi_vdma_4' at clock pin 'm_axi_s2mm_aclk' is different from the actual clock period '8.333', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'system_i/v_axi4s_vid_out_0' at clock pin 'vid_io_out_clk' is different from the actual clock period '8.333', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'system_i/v_tc_0' at clock pin 'clk' is different from the actual clock period '8.333', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 891.172 ; gain = 542.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 891.172 ; gain = 542.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_clk_n. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_clk_n. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_clk_p. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_clk_p. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_n[0]. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_n[0]. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_n[1]. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_n[1]. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_n[2]. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_n[2]. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_p[0]. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_p[0]. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_p[1]. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_p[1]. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_p[2]. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_p[2]. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0/system_rgb2dvi_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0/system_processing_system7_0_0_in_context.xdc, line 258).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0/system_processing_system7_0_0_in_context.xdc, line 259).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0/system_processing_system7_0_0_in_context.xdc, line 260).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0/system_processing_system7_0_0_in_context.xdc, line 261).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0/system_processing_system7_0_0_in_context.xdc, line 262).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  c:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0/system_processing_system7_0_0_in_context.xdc, line 263).
+Applied set_property DONT_TOUCH = true for system_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_dynclk_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/rgb2dvi_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_mem_intercon. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_vdma_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axis_subset_converter_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/processing_system7_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/processing_system7_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/rst_processing_system7_0_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/rst_processing_system7_0_150M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/v_axi4s_vid_out_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/v_tc_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_interconnect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_vdma_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_vdma_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_vdma_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_vdma_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/ov5640_axis_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/ov5640_axis_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/ov5640_axis_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/ov5640_axis_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/subimage_axis_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/subimage_axis_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/subimage_axis_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/subimage_axis_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/processing_system7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_interconnect_0/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_mem_intercon/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/processing_system7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/processing_system7_0_axi_periph/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/processing_system7_0_axi_periph/m01_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/processing_system7_0_axi_periph/m02_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/processing_system7_0_axi_periph/m04_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/processing_system7_0_axi_periph/m05_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/processing_system7_0_axi_periph/m06_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/processing_system7_0_axi_periph/m07_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 891.172 ; gain = 542.254
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'config_step_reg' in module 'reg_config'
+INFO: [Synth 8-5544] ROM "i2c_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_index" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'config_step_reg' using encoding 'one-hot' in module 'reg_config'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 891.172 ; gain = 542.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 8     
+	   2 Input      6 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 4     
+	                9 Bit    Registers := 8     
+	                6 Bit    Registers := 4     
+	                1 Bit    Registers := 39    
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 6     
+	  43 Input      1 Bit        Muxes := 28    
+	   3 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module power_on_delay 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module i2c_com 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  43 Input      1 Bit        Muxes := 7     
+Module reg_config 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+Why this net has no driver: _order_recur <const0>
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M03_ACLK
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M03_ARESETN
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M04_ACLK
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M04_ARESETN
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M05_ACLK
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M05_ARESETN
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M06_ACLK
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M06_ARESETN
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M07_ACLK
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M07_ARESETN
+WARNING: [Synth 8-3331] design system_axi_mem_intercon_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design system_axi_mem_intercon_0 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design system_axi_mem_intercon_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design system_axi_mem_intercon_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design system_axi_interconnect_0_0 has unconnected port M00_ACLK
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'reg_config_inst4/i2c_data_reg[14]' (FDE) to 'reg_config_inst4/i2c_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst4/i2c_data_reg[27]' (FDE) to 'reg_config_inst4/i2c_data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst4/i2c_data_reg[28]' (FDE) to 'reg_config_inst4/i2c_data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst4/i2c_data_reg[29]' (FDE) to 'reg_config_inst4/i2c_data_reg[30]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\reg_config_inst4/i2c_data_reg[30] )
+INFO: [Synth 8-3886] merging instance 'reg_config_inst4/i2c_data_reg[31]' (FDE) to 'reg_config_inst4/i2c_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst4/i2c_data_reg[23]' (FDE) to 'reg_config_inst4/i2c_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst4/i2c_data_reg[24]' (FDE) to 'reg_config_inst4/i2c_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst4/i2c_data_reg[25]' (FDE) to 'reg_config_inst4/i2c_data_reg[26]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_config_inst4/i2c_data_reg[26] )
+INFO: [Synth 8-3886] merging instance 'reg_config_inst4/clock_20k_cnt_reg[11]' (FDC) to 'reg_config_inst4/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst4/clock_20k_cnt_reg[12]' (FDC) to 'reg_config_inst4/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst4/clock_20k_cnt_reg[13]' (FDC) to 'reg_config_inst4/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst4/clock_20k_cnt_reg[14]' (FDC) to 'reg_config_inst4/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst4/clock_20k_cnt_reg[15]' (FDC) to 'reg_config_inst3/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst3/i2c_data_reg[14]' (FDE) to 'reg_config_inst3/i2c_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst3/i2c_data_reg[27]' (FDE) to 'reg_config_inst3/i2c_data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst3/i2c_data_reg[28]' (FDE) to 'reg_config_inst3/i2c_data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst3/i2c_data_reg[29]' (FDE) to 'reg_config_inst3/i2c_data_reg[30]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\reg_config_inst3/i2c_data_reg[30] )
+INFO: [Synth 8-3886] merging instance 'reg_config_inst3/i2c_data_reg[31]' (FDE) to 'reg_config_inst3/i2c_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst3/i2c_data_reg[23]' (FDE) to 'reg_config_inst3/i2c_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst3/i2c_data_reg[24]' (FDE) to 'reg_config_inst3/i2c_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst3/i2c_data_reg[25]' (FDE) to 'reg_config_inst3/i2c_data_reg[26]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_config_inst3/i2c_data_reg[26] )
+INFO: [Synth 8-3886] merging instance 'reg_config_inst3/clock_20k_cnt_reg[11]' (FDC) to 'reg_config_inst3/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst3/clock_20k_cnt_reg[12]' (FDC) to 'reg_config_inst3/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst3/clock_20k_cnt_reg[13]' (FDC) to 'reg_config_inst3/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst3/clock_20k_cnt_reg[14]' (FDC) to 'reg_config_inst3/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst3/clock_20k_cnt_reg[15]' (FDC) to 'reg_config_inst1/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst2/i2c_data_reg[14]' (FDE) to 'reg_config_inst2/i2c_data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst2/i2c_data_reg[27]' (FDE) to 'reg_config_inst2/i2c_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst2/i2c_data_reg[28]' (FDE) to 'reg_config_inst2/i2c_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst2/i2c_data_reg[29]' (FDE) to 'reg_config_inst2/i2c_data_reg[30]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\reg_config_inst2/i2c_data_reg[30] )
+INFO: [Synth 8-3886] merging instance 'reg_config_inst2/i2c_data_reg[31]' (FDE) to 'reg_config_inst2/i2c_data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst2/i2c_data_reg[23]' (FDE) to 'reg_config_inst2/i2c_data_reg[24]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst2/i2c_data_reg[24]' (FDE) to 'reg_config_inst2/i2c_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst2/i2c_data_reg[25]' (FDE) to 'reg_config_inst2/i2c_data_reg[26]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_config_inst2/i2c_data_reg[26] )
+INFO: [Synth 8-3886] merging instance 'reg_config_inst2/clock_20k_cnt_reg[11]' (FDC) to 'reg_config_inst1/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst2/clock_20k_cnt_reg[12]' (FDC) to 'reg_config_inst1/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst2/clock_20k_cnt_reg[13]' (FDC) to 'reg_config_inst1/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst2/clock_20k_cnt_reg[14]' (FDC) to 'reg_config_inst1/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst2/clock_20k_cnt_reg[15]' (FDC) to 'reg_config_inst1/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst1/i2c_data_reg[14]' (FDE) to 'reg_config_inst1/i2c_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst1/i2c_data_reg[27]' (FDE) to 'reg_config_inst1/i2c_data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst1/i2c_data_reg[28]' (FDE) to 'reg_config_inst1/i2c_data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst1/i2c_data_reg[29]' (FDE) to 'reg_config_inst1/i2c_data_reg[30]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\reg_config_inst1/i2c_data_reg[30] )
+INFO: [Synth 8-3886] merging instance 'reg_config_inst1/i2c_data_reg[31]' (FDE) to 'reg_config_inst1/i2c_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst1/i2c_data_reg[23]' (FDE) to 'reg_config_inst1/i2c_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst1/i2c_data_reg[24]' (FDE) to 'reg_config_inst1/i2c_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst1/i2c_data_reg[25]' (FDE) to 'reg_config_inst1/i2c_data_reg[26]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_config_inst1/i2c_data_reg[26] )
+INFO: [Synth 8-3886] merging instance 'reg_config_inst1/clock_20k_cnt_reg[11]' (FDC) to 'reg_config_inst1/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst1/clock_20k_cnt_reg[12]' (FDC) to 'reg_config_inst1/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst1/clock_20k_cnt_reg[13]' (FDC) to 'reg_config_inst1/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reg_config_inst1/clock_20k_cnt_reg[14]' (FDC) to 'reg_config_inst1/clock_20k_cnt_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_config_inst1/clock_20k_cnt_reg[15] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 891.172 ; gain = 542.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+---------------------------+---------------+----------------+
+|Module Name | RTL Object                | Depth x Width | Implemented As | 
++------------+---------------------------+---------------+----------------+
+|reg_config  | reg_data                  | 512x23        | LUT            | 
+|top         | reg_config_inst2/reg_data | 512x23        | LUT            | 
+|top         | reg_config_inst1/reg_data | 512x23        | LUT            | 
+|top         | reg_config_inst3/reg_data | 512x23        | LUT            | 
+|top         | reg_config_inst4/reg_data | 512x23        | LUT            | 
++------------+---------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/rgb2dvi_0/SerialClk' to pin 'system_i/axi_dynclk_0/bbstub_PXL_CLK_5X_O/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'system_i/rgb2dvi_0/PixelClk' to 'system_i/axi_dynclk_0/bbstub_PXL_CLK_O/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/processing_system7_0/FCLK_CLK0' to pin 'system_i/processing_system7_0/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/processing_system7_0/FCLK_CLK1' to pin 'system_i/processing_system7_0/bbstub_FCLK_CLK1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/processing_system7_0/FCLK_CLK2' to pin 'system_i/processing_system7_0/bbstub_FCLK_CLK2/O'
+INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 891.172 ; gain = 542.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 904.992 ; gain = 556.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 917.914 ; gain = 568.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin system_i:IIC_0_0_scl_i to constant 0
+WARNING: [Synth 8-3295] tying undriven pin system_i:IIC_0_0_sda_i to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 917.914 ; gain = 568.996
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 917.914 ; gain = 568.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 917.914 ; gain = 568.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 917.914 ; gain = 568.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 917.914 ; gain = 568.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 917.914 ; gain = 568.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------------+----------+
+|      |BlackBox name                          |Instances |
++------+---------------------------------------+----------+
+|1     |system_xbar_0                          |         1|
+|2     |system_auto_pc_0                       |         1|
+|3     |system_auto_pc_1                       |         1|
+|4     |system_xbar_1                          |         1|
+|5     |system_auto_pc_2                       |         1|
+|6     |system_auto_pc_3                       |         1|
+|7     |system_auto_pc_4                       |         1|
+|8     |system_auto_pc_5                       |         1|
+|9     |system_auto_pc_6                       |         1|
+|10    |system_auto_pc_7                       |         1|
+|11    |system_auto_pc_8                       |         1|
+|12    |system_auto_pc_9                       |         1|
+|13    |system_axi_dynclk_0_0                  |         1|
+|14    |system_axi_vdma_0_0                    |         1|
+|15    |system_axi_vdma_1_0                    |         1|
+|16    |system_axi_vdma_2_0                    |         1|
+|17    |system_axi_vdma_3_0                    |         1|
+|18    |system_axi_vdma_4_0                    |         1|
+|19    |system_axis_subset_converter_0_0       |         1|
+|20    |system_ov5640_axis_0_0                 |         1|
+|21    |system_ov5640_axis_1_0                 |         1|
+|22    |system_ov5640_axis_2_0                 |         1|
+|23    |system_ov5640_axis_3_0                 |         1|
+|24    |system_processing_system7_0_0          |         1|
+|25    |system_rgb2dvi_0_0                     |         1|
+|26    |system_rst_processing_system7_0_100M_0 |         1|
+|27    |system_rst_processing_system7_0_150M_0 |         1|
+|28    |system_subimage_axis_0_0               |         1|
+|29    |system_subimage_axis_1_0               |         1|
+|30    |system_subimage_axis_2_0               |         1|
+|31    |system_subimage_axis_3_0               |         1|
+|32    |system_v_axi4s_vid_out_0_0             |         1|
+|33    |system_v_tc_0_0                        |         1|
++------+---------------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------------+------+
+|      |Cell                                   |Count |
++------+---------------------------------------+------+
+|1     |system_auto_pc_0                       |     1|
+|2     |system_auto_pc_1                       |     1|
+|3     |system_auto_pc_2                       |     1|
+|4     |system_auto_pc_3                       |     1|
+|5     |system_auto_pc_4                       |     1|
+|6     |system_auto_pc_5                       |     1|
+|7     |system_auto_pc_6                       |     1|
+|8     |system_auto_pc_7                       |     1|
+|9     |system_auto_pc_8                       |     1|
+|10    |system_auto_pc_9                       |     1|
+|11    |system_axi_dynclk_0_0                  |     1|
+|12    |system_axi_vdma_0_0                    |     1|
+|13    |system_axi_vdma_1_0                    |     1|
+|14    |system_axi_vdma_2_0                    |     1|
+|15    |system_axi_vdma_3_0                    |     1|
+|16    |system_axi_vdma_4_0                    |     1|
+|17    |system_axis_subset_converter_0_0       |     1|
+|18    |system_ov5640_axis_0_0                 |     1|
+|19    |system_ov5640_axis_1_0                 |     1|
+|20    |system_ov5640_axis_2_0                 |     1|
+|21    |system_ov5640_axis_3_0                 |     1|
+|22    |system_processing_system7_0_0          |     1|
+|23    |system_rgb2dvi_0_0                     |     1|
+|24    |system_rst_processing_system7_0_100M_0 |     1|
+|25    |system_rst_processing_system7_0_150M_0 |     1|
+|26    |system_subimage_axis_0_0               |     1|
+|27    |system_subimage_axis_1_0               |     1|
+|28    |system_subimage_axis_2_0               |     1|
+|29    |system_subimage_axis_3_0               |     1|
+|30    |system_v_axi4s_vid_out_0_0             |     1|
+|31    |system_v_tc_0_0                        |     1|
+|32    |system_xbar_0                          |     1|
+|33    |system_xbar_1                          |     1|
+|34    |BUFG                                   |     8|
+|35    |CARRY4                                 |     4|
+|36    |LUT1                                   |     7|
+|37    |LUT2                                   |    20|
+|38    |LUT3                                   |    39|
+|39    |LUT4                                   |    44|
+|40    |LUT5                                   |    50|
+|41    |LUT6                                   |   578|
+|42    |MUXF7                                  |   128|
+|43    |FDCE                                   |   140|
+|44    |FDPE                                   |    37|
+|45    |FDRE                                   |   105|
+|46    |IBUF                                   |    52|
+|47    |OBUF                                   |     8|
+|48    |OBUFT                                  |     4|
++------+---------------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------------+-----------------------------------------+------+
+|      |Instance                            |Module                                   |Cells |
++------+------------------------------------+-----------------------------------------+------+
+|1     |top                                 |                                         |  6971|
+|2     |  system_i                          |system                                   |  5747|
+|3     |    axi_interconnect_0              |system_axi_interconnect_0_0              |   786|
+|4     |      m00_couplers                  |m00_couplers_imp_LCIC31                  |   270|
+|5     |    axi_mem_intercon                |system_axi_mem_intercon_0                |   125|
+|6     |      s00_couplers                  |s00_couplers_imp_1P403ZT                 |   125|
+|7     |    processing_system7_0_axi_periph |system_processing_system7_0_axi_periph_0 |  3063|
+|8     |      m00_couplers                  |m00_couplers_imp_WKXF3L                  |   177|
+|9     |      m01_couplers                  |m01_couplers_imp_1ORP4PS                 |   177|
+|10    |      m02_couplers                  |m02_couplers_imp_1VD9O7M                 |   177|
+|11    |      m04_couplers                  |m04_couplers_imp_18RU2BA                 |   177|
+|12    |      m05_couplers                  |m05_couplers_imp_47WDK7                  |   177|
+|13    |      m06_couplers                  |m06_couplers_imp_ATGYFP                  |   177|
+|14    |      m07_couplers                  |m07_couplers_imp_11WAABO                 |   177|
+|15    |      s00_couplers                  |s00_couplers_imp_IK3G2O                  |   254|
+|16    |    xlconcat_0                      |system_xlconcat_0_0                      |     0|
+|17    |  power_on_delay_inst               |power_on_delay                           |    32|
+|18    |  reg_config_inst1                  |reg_config                               |   280|
+|19    |    u1                              |i2c_com_5                                |    38|
+|20    |  reg_config_inst2                  |reg_config_0                             |   281|
+|21    |    u1                              |i2c_com_4                                |    39|
+|22    |  reg_config_inst3                  |reg_config_1                             |   280|
+|23    |    u1                              |i2c_com_3                                |    38|
+|24    |  reg_config_inst4                  |reg_config_2                             |   279|
+|25    |    u1                              |i2c_com                                  |    38|
++------+------------------------------------+-----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 917.914 ; gain = 568.996
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 40 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 917.914 ; gain = 199.484
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 917.914 ; gain = 568.996
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 132 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 917.914 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+209 Infos, 138 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 917.914 ; gain = 576.785
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 917.914 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mp02/Desktop/mz7020_ov5640_quad/ov5640_quad/ov5640_quad.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 29 16:53:47 2021...

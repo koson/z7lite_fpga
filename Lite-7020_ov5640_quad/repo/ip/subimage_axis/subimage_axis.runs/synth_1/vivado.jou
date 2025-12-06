@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jul 24 19:28:41 2018
+# Process ID: 3572
+# Current directory: D:/DualCam/course_s2/04_ov5640_single/repo/ip/subimage_axis/subimage_axis.runs/synth_1
+# Command line: vivado.exe -log subimage_axis.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source subimage_axis.tcl
+# Log file: D:/DualCam/course_s2/04_ov5640_single/repo/ip/subimage_axis/subimage_axis.runs/synth_1/subimage_axis.vds
+# Journal file: D:/DualCam/course_s2/04_ov5640_single/repo/ip/subimage_axis/subimage_axis.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source subimage_axis.tcl -notrace

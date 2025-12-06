@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jan  4 17:43:26 2023
+# Process ID: 5340
+# Current directory: D:/my_space/01_FPGA_demo_7020/Lab14_FPGA_adda_hdmi/adda_hdmi.runs/synth_3
+# Command line: vivado.exe -log adda_hdmi_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source adda_hdmi_top.tcl
+# Log file: D:/my_space/01_FPGA_demo_7020/Lab14_FPGA_adda_hdmi/adda_hdmi.runs/synth_3/adda_hdmi_top.vds
+# Journal file: D:/my_space/01_FPGA_demo_7020/Lab14_FPGA_adda_hdmi/adda_hdmi.runs/synth_3\vivado.jou
+#-----------------------------------------------------------
+source adda_hdmi_top.tcl -notrace

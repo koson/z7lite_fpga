@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jul 24 19:28:03 2018
+# Process ID: 9276
+# Current directory: D:/DualCam/course_s2/04_ov5640_single/repo/ip/subimage_axis
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2192 D:\DualCam\course_s2\04_ov5640_single\repo\ip\subimage_axis\subimage_axis.xpr
+# Log file: D:/DualCam/course_s2/04_ov5640_single/repo/ip/subimage_axis/vivado.log
+# Journal file: D:/DualCam/course_s2/04_ov5640_single/repo/ip/subimage_axis\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DualCam/course_s2/04_ov5640_single/repo/ip/subimage_axis/subimage_axis.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1

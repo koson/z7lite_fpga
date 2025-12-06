@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jan  4 17:37:11 2023
+# Process ID: 21780
+# Current directory: D:/my_space/01_FPGA_demo_7020/Lab10_FPGA_hdmi_ip/hdmi_ip.runs/impl_2
+# Command line: vivado.exe -log hdmi_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source hdmi_top.tcl -notrace
+# Log file: D:/my_space/01_FPGA_demo_7020/Lab10_FPGA_hdmi_ip/hdmi_ip.runs/impl_2/hdmi_top.vdi
+# Journal file: D:/my_space/01_FPGA_demo_7020/Lab10_FPGA_hdmi_ip/hdmi_ip.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source hdmi_top.tcl -notrace

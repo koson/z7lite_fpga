@@ -1,0 +1,76 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jan  4 17:37:38 2023
+| Host         : DESKTOP-LA8ISAJ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file hdmi_top_control_sets_placed.rpt
+| Design       : hdmi_top
+| Device       : xc7z020
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     8 |
+| Unused register locations in slices containing registers |    24 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      5 |            1 |
+|     10 |            1 |
+|     13 |            1 |
+|    16+ |            4 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              93 |           31 |
+| No           | No                    | Yes                    |               9 |            4 |
+| No           | Yes                   | No                     |              61 |           26 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              37 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+-----------------------------+-----------------------------------------------------------------------------------------+------------------+----------------+
+|        Clock Signal       |        Enable Signal        |                                     Set/Reset Signal                                    | Slice Load Count | Bel Load Count |
++---------------------------+-----------------------------+-----------------------------------------------------------------------------------------+------------------+----------------+
+|  inst_clock/inst/clk_out1 |                             | inst_tmds_encoder/U0/ClockGenInternal.ClockGenX/in0                                     |                1 |              2 |
+|  inst_clock/inst/clk_out1 |                             | inst_tmds_encoder/U0/ClockGenInternal.ClockGenX/LockLostReset/SyncAsyncx/oSyncStages[1] |                2 |              5 |
+|  inst_clock/inst/clk_out1 |                             | inst_tmds_encoder/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0              |                3 |             10 |
+|  inst_clock/inst/clk_out1 | inst_vga_shift/cnt_v        | inst_vga_shift/cnt_v[0]_i_1_n_0                                                         |                4 |             13 |
+|  inst_clock/inst/clk_out1 |                             | inst_vga_shift/rst                                                                      |                8 |             21 |
+|  inst_clock/inst/clk_out1 | inst_vga_shift/y[0]_i_1_n_0 | inst_vga_shift/rst                                                                      |                6 |             24 |
+|  inst_clock/inst/clk_out1 |                             | inst_tmds_encoder/U0/DataEncoders[0].DataEncoder/SR[0]                                  |               16 |             32 |
+|  inst_clock/inst/clk_out1 |                             |                                                                                         |               31 |             93 |
++---------------------------+-----------------------------+-----------------------------------------------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,108 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jan  4 17:30:18 2023
+| Host         : DESKTOP-LA8ISAJ running 64-bit major release  (build 9200)
+| Command      : report_methodology -file adda_hdmi_top_methodology_drc_routed.rpt -pb adda_hdmi_top_methodology_drc_routed.pb -rpx adda_hdmi_top_methodology_drc_routed.rpx
+| Design       : adda_hdmi_top
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 13
++-----------+----------+--------------------------------------------------------+------------+
+| Rule      | Severity | Description                                            | Violations |
++-----------+----------+--------------------------------------------------------+------------+
+| TIMING-4  | Warning  | Invalid primary clock redefinition on a clock tree     | 1          |
+| TIMING-18 | Warning  | Missing input or output delay                          | 9          |
+| TIMING-27 | Warning  | Invalid primary clock on hierarchical pin              | 1          |
+| XDCC-1    | Warning  | Scoped Clock constraint overwritten with the same name | 1          |
+| XDCC-7    | Warning  | Scoped Clock constraint overwritten on the same source | 1          |
++-----------+----------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-4#1 Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock inst_hdmi_clock/inst/clk_in1 is defined downstream of clock clk_out1_clock and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on rst_n relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on da_data[0] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on da_data[1] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on da_data[2] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on da_data[3] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on da_data[4] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on da_data[5] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on da_data[6] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on da_data[7] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-27#1 Warning
+Invalid primary clock on hierarchical pin  
+A primary clock inst_hdmi_clock/inst/clk_in1 is created on an inappropriate internal pin inst_hdmi_clock/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 20.000 [get_ports clk] (Source: D:/my_space/02_FPGA_Demo_7010/Lab14_FPGA_adda_hdmi/adda_hdmi.srcs/constrs_1/new/top_pin.xdc (Line: 2))
+Previous: create_clock -period 20.000 [get_ports clk] (Source: d:/my_space/02_FPGA_Demo_7010/Lab14_FPGA_adda_hdmi/adda_hdmi.srcs/sources_1/ip/clock/clock.xdc (Line: 56))
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 20.000 [get_ports clk] (Source: D:/my_space/02_FPGA_Demo_7010/Lab14_FPGA_adda_hdmi/adda_hdmi.srcs/constrs_1/new/top_pin.xdc (Line: 2))
+Previous: create_clock -period 20.000 [get_ports clk] (Source: d:/my_space/02_FPGA_Demo_7010/Lab14_FPGA_adda_hdmi/adda_hdmi.srcs/sources_1/ip/clock/clock.xdc (Line: 56))
+Related violations: <none>
+
+

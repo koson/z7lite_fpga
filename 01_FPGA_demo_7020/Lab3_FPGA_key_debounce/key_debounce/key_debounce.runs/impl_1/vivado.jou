@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul  2 10:42:07 2020
+# Process ID: 6652
+# Current directory: E:/demo/Z7-Lite/7020/FPGA/Lab3_FPGA_key_debounce/key_debounce/key_debounce.runs/impl_1
+# Command line: vivado.exe -log key_debounce.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source key_debounce.tcl -notrace
+# Log file: E:/demo/Z7-Lite/7020/FPGA/Lab3_FPGA_key_debounce/key_debounce/key_debounce.runs/impl_1/key_debounce.vdi
+# Journal file: E:/demo/Z7-Lite/7020/FPGA/Lab3_FPGA_key_debounce/key_debounce/key_debounce.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source key_debounce.tcl -notrace
